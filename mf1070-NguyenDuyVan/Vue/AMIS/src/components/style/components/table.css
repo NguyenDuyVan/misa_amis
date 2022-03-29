@@ -1,0 +1,183 @@
+.m-table-container {
+  padding-left: 20px;
+  background: #fff;
+  overflow-x: scroll;
+  position: absolute;
+  top: 137px;
+  left: 16px;
+  right: 0px;
+  bottom: 0px;
+  transition: 0.4s;
+}
+
+.m-table-container::before {
+  content: "";
+  position: fixed;
+  top: 48px;
+  bottom: 17px;
+  right: 17px;
+  width: 13px;
+  background-color: #f4f5f8;
+}
+
+.m-table-container.top-0 {
+  top: 0;
+}
+
+.m-table-container .m-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px;
+  margin-bottom: 56px;
+}
+
+.m-table-container .m-table thead {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.m-table-container .m-table thead tr th {
+  background-color: #eceef1;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 12px;
+  height: 34px;
+}
+
+.m-table-container .m-table tbody tr td {
+  background-color: #fff;
+  height: 40px;
+}
+
+.m-table-container .m-table tr th,
+td {
+  padding: 0;
+}
+
+.m-table-container .m-table tr {
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+.m-table-container .m-table tbody tr:hover td {
+  background-color: #f3f8f8 !important;
+}
+
+.m-table-container .m-table tbody tr.active td {
+  background-color: #f3f8f8 !important;
+}
+
+.m-table-container .m-table tr th > div,
+td > div {
+  border-bottom: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
+  margin: 0;
+  height: inherit;
+  padding: 0 10px;
+  line-height: 40px;
+}
+
+.m-table-container .m-table .text-align-left {
+  text-align: left;
+}
+
+.m-table-container .m-table .text-align-right {
+  text-align: right;
+}
+
+.m-table-container .m-table .text-align-center {
+  text-align: center;
+}
+
+.m-table-container .m-table td .m-modify-arrow {
+  width: 16px;
+  height: 16px;
+  padding: 0 16px;
+  padding-left: 10px;
+  margin-left: 20px;
+  background-image: url("../../../assets/img/Sprites.64af8f61.svg");
+  background-position: -891px -358px;
+  position: relative;
+  cursor: pointer;
+}
+
+.m-table-container .m-table td .m-modify-arrow.active {
+  border: 1px solid #0075c0;
+}
+
+.m-table-container .m-table td .m-modify-arrow .m-dropdown {
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 10;
+  transition: 0.4s;
+  border-radius: 2px;
+  padding: 2px;
+  display: none;
+}
+
+.m-table-container .m-table td .m-modify-arrow .m-dropdown div {
+  height: 27px;
+  width: 116px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 16px;
+}
+
+.m-table-container .m-table td .m-modify-arrow .m-dropdown.active {
+  display: block;
+}
+
+.m-table-container .m-table td .m-modify-arrow .m-dropdown.active {
+  display: block;
+}
+
+.m-table-container .m-table td .m-modify-arrow .m-dropdown div:hover {
+  background-color: #e8e9ec;
+  color: #08bf1e;
+}
+
+.pos-sticky {
+  position: sticky;
+  left: 0;
+}
+
+.sub-border-left::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: calc(100% + 2px);
+  left: -20px;
+  top: -1px;
+  z-index: 9;
+  background-color: #fff;
+}
+
+.sub-border-right > div {
+  border-left: 1px solid #ccc !important;
+}
+
+.sub-border-right::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: calc(100% + 2px);
+  right: -30px;
+  top: -1px;
+  background-color: #fff;
+}
+
+.sub-border-right::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: calc(100% + 2px);
+  right: -44px;
+  top: -1px;
+  background-color: #f4f5f8;
+}

@@ -1,0 +1,78 @@
+/* Left inner */
+.header-right > .m-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+}
+
+.header-right > .m-row .left-inner,
+.right-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .m-row .left-inner .m-branch {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.header-right .m-row .left-inner .m-branch .m-branch-logo {
+  width: 32px;
+  height: 32px;
+  color: #5b56d0;
+  background-color: #e2e1ff;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.header-right .m-row .left-inner .m-branch .m-branch-info {
+  margin: 0 10px;
+}
+
+/* Right inner */
+.header-right .m-row .right-inner > .m-row {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .m-row .right-inner .m-notification {
+  margin-right: 16px;
+  font-size: 20px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.header-right .m-row .right-inner .m-avatar {
+  margin-right: 16px;
+  background-image: url("../../assets/icon/avatar-default.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.header-right .m-row .right-inner .m-name {
+  margin-right: 16px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.header-right .m-row .right-inner .m-option {
+  margin-right: 16px;
+  background-image: url("../../assets/icon/option.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  line-height: 40px;
+  cursor: pointer;
+}

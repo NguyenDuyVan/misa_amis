@@ -1,0 +1,109 @@
+.navbar {
+  width: 178px;
+  height: calc(100vh - 48px);
+  border-right: 1px solid #bbb;
+  flex-shrink: 0;
+  background-color: #38393d;
+  color: #fff;
+  padding-top: 14px;
+}
+
+.navbar .menu-item {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.navbar .menu-item:hover {
+  background-color: #5d5d61;
+}
+
+.navbar .menu-item.active {
+  background-color: #019160;
+}
+
+.navbar .menu-item .menu-item-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-left: 16px;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .menu-item .menu-item-link.router-link-exact-active {
+  font-weight: bold;
+  border-left: 6px solid #2ca01c;
+  padding-left: 10px;
+  background-color: #5D5D61;
+}
+
+.navbar .menu-item .menu-icon {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar .menu-item .menu-icon-dashboard {
+  background-position: -30px -1628px;
+}
+
+.navbar .menu-item .menu-icon-cash {
+  background-position: -73px -1628px;
+}
+
+.navbar .menu-item .menu-icon-deposits {
+  background-position: -117px -1628px;
+}
+
+.navbar .menu-item .menu-icon-buy {
+  background-position: -161px -1628px;
+}
+
+.navbar .menu-item .menu-icon-sell {
+  background-position: -204px -1628px;
+}
+
+.navbar .menu-item .menu-icon-invoice {
+  background-position: -249px -1628px;
+}
+
+.navbar .menu-item .menu-icon-stock {
+  background-position: -291px -1628px;
+}
+
+.navbar .menu-item .menu-icon-tools {
+  background-position: -336px -1628px;
+}
+
+.navbar .menu-item .menu-icon-fixed-assets {
+  background-position: -378px -1630px;
+}
+
+.navbar .menu-item .menu-icon-tax {
+  background-position: -423px -1630px;
+}
+
+.navbar .menu-item .menu-icon-price {
+  background-position: -467px -1628px;
+}
+
+.navbar .menu-item .menu-icon-general {
+  background-position: -510px -1628px;
+}
+
+.navbar .menu-item .menu-icon-budget {
+  background-position: -378px -1659px;
+}
+
+.navbar .menu-item .menu-icon-report {
+  background-position: -547px -1628px;
+}
+
+.navbar .menu-item .menu-icon-finance {
+  background-position: -204px -1664px;
+}

@@ -1,0 +1,26 @@
+.m-loading {
+  user-select: none;
+}
+
+.m-loading .m-loading-wrapper {
+  position: fixed;
+  inset: 0 0 0 0;
+  display: flex;
+  z-index: 11;
+}
+
+.m-loading .m-loading-wrapper .loader {
+  margin: auto;
+  border: 6px solid #ccc ; 
+  border-top: 6px solid #2ca01c;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

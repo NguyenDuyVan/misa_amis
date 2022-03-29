@@ -1,0 +1,60 @@
+.checkbox-group {
+  display: block;
+}
+
+.checkbox-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-group label:before {
+  content: "";
+  background-color: transparent;
+  border: 2px solid #35BF22;
+  padding: 6.5px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 2px;
+  transform: rotate(-90deg);
+  transition: .2s;
+}
+
+.checkbox-group input:checked + label:before {
+  transform: rotate(0);
+}
+
+.checkbox-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 4px;
+  height: 8px;
+  border: solid #35BF22;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  animation: checkboxRotate 0.2s;
+}
+
+@keyframes checkboxRotate {
+  from {
+    transform: rotateZ(-45deg);
+  }
+  to {
+    transform: rotateZ(45deg);
+
+  }
+}

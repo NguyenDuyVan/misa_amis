@@ -1,0 +1,102 @@
+.m-input-wrapper {
+  position: relative;
+}
+
+.m-input {
+  border-radius: 2px;
+  border: 0;
+  outline: 1px solid #bbb;
+  height: 32px;
+  color: #000;
+  padding: 0 36px 0 10px;
+  font-size: 13px;
+  font-family: notosans-regular;
+  box-sizing: border-box;
+  width: 240px;
+}
+
+.m-input.error {
+  outline: 1px solid #ff4747;
+  position: relative;
+}
+
+.error:hover ~ .error-title,
+.m-combo-box.error:hover .error-title {
+  opacity: 1;
+}
+
+.error-title {
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  top: 82%;
+  left: 20%;
+  height: 15px;
+  width: 150px;
+  text-align: center;
+  line-height: 15px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 5;
+}
+
+.m-input.capitalize::placeholder {
+  text-transform: capitalize;
+}
+
+.m-input.placeholder-italic::placeholder {
+  font-family: notosans-italic;
+}
+
+.m-input-date {
+  padding: 0 4px !important;
+  text-transform: uppercase;
+}
+
+.m-input-icon {
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.m-input::placeholder {
+  font-size: 12px;
+}
+
+.m-input:focus {
+  outline: 1px solid #019160;
+}
+
+.m-input:focus::placeholder {
+  font-size: 0;
+}
+
+.m-input-error:focus {
+  outline-color: #ff4747;
+}
+
+.m-error-text {
+  background-color: #ff4747;
+  width: 140px;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px 8px;
+}
+
+.m-error-arrow {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  height: 12px;
+  width: 8px;
+  background-color: #ff4747;
+  transform: rotate(45deg);
+}

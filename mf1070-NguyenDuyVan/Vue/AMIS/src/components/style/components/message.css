@@ -1,0 +1,75 @@
+.m-message-container {
+  position: fixed;
+  inset: 0 0 0 0;
+  display: flex;
+  z-index: 10;
+}
+
+.m-message-container .m-message-box {
+  width: 444px;
+  padding: 32px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 158px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 2px;
+  animation: show .2s ease;
+}
+
+@keyframes show {
+  from {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.m-message-container .m-message-box .m-message-content {
+  display: flex;
+  height: 62px;
+  border-bottom: 1px solid #b8bcc3;
+}
+.m-message-container .m-message-box .m-message-content .icon-message {
+  width: 48px;
+  height: 48px;
+}
+
+.m-message-container .m-message-box .m-message-content .text-message {
+  margin-bottom: 32px;
+  padding-top: 12px;
+  padding-left: 16px;
+}
+.m-message-container .m-message-box .m-message-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.m-message-container .m-message-box .m-message-footer .m-btn {
+  padding: 6px 16px;
+  min-width: unset;
+  height: 34px;
+}
+
+/* message Info */
+.m-message-container.m-message-info .m-message-box .m-message-content .icon-message {
+  background-position: -24px -954px;
+}
+
+/* message Warning */
+.m-message-container.m-message-warning .m-message-box .m-message-content .icon-message {
+  background-position: -598px -454px;
+}
+
+.m-message-container.m-message-warning .m-message-box .m-message-footer {
+  justify-content: end;
+}
+
+/* message Confirm */
+.m-message-container.m-message-confirm .m-message-box .m-message-content .icon-message {
+  background-position: -661px -454px;
+}

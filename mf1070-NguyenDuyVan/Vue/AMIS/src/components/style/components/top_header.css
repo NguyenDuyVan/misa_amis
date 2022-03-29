@@ -1,0 +1,131 @@
+/* Left inner */
+.header-right > .m-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+}
+
+.header-right > .m-row .left-inner,
+.right-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header-right > .m-row .left-inner .m-row {
+  display: flex;
+  align-items: center;
+}
+
+.header-right > .m-row .left-inner .m-menu-toggle {
+  background-position: -843px -30px;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+.header-right .m-row .left-inner .m-branch {
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.header-right .m-row .left-inner .m-branch .m-branch-info {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.header-right .m-row .left-inner .m-branch .m-branch-icon {
+  background-position: -80px -360px;
+  width: 14px;
+  height: 14px;
+  transform: rotate(90deg);
+  margin-left: 10px;
+}
+
+.header-right .m-row .left-inner .m-current-db {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ebedf0;
+  padding: 0 12px;
+  border-radius: 40px;
+  margin-left: 15px;
+  font-size: 13px;
+  cursor: pointer;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.header-right .m-row .left-inner .m-current-db .m-current-db-icon {
+  width: 6px;
+  height: 6px;
+  background-color: #4ea344;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.header-right .m-row .left-inner .m-current-db .m-current-db-text {
+  padding-left: 7px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  color: #111;
+}
+
+/* Right inner */
+.header-right .m-row .right-inner > .m-row {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .m-row .right-inner > .m-row .m-input {
+  margin-right: 20px;
+}
+
+.header-right .m-row .right-inner > .m-row .tooltip {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .m-row .right-inner > .m-row .tooltip .notification {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  background-position: -788px -30px;
+}
+
+.header-right .m-row .right-inner .m-user {
+  padding: 0 16px;
+}
+
+.header-right .m-row .right-inner .m-avatar {
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.header-right .m-row .right-inner .m-name {
+  margin-right: 16px;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header-right .m-row .right-inner .m-arrow {
+  margin-right: 16px;
+  background-position: -1076px -32px;
+  width: 16px;
+  height: 16px;
+  line-height: 40px;
+}

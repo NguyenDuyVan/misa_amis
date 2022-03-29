@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="m-row">
+      <label for="">1. Button</label>
+      <div class="m-row">
+        <button class="m-btn">Nộp hồ sơ</button>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">2. Button Icon</label>
+      <div class="m-row">
+        <button class="m-btn m-btn-icon">Lập hồ sơ</button>
+      </div>
+      <div class="m-row" style="display: flex">
+        <button
+          class="m-btn m-btn-icon"
+          style="
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            border-right: 1px solid #bbb;
+          "
+        >
+          <span class="m-btn-text">Lưu và thêm mới</span>
+        </button>
+        <button
+          class="m-btn"
+          style="
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            padding: 0 12px;
+            min-width: auto;
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-chevron-right m-btn-arrow"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">3. Seconds Button</label>
+      <div class="m-row">
+        <button class="m-btn m-btn-2">Nộp hồ sơ</button>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">4. Combo Box</label>
+      <div class="combo-box">
+        <select name="" id="">
+          <option value="">Tất cả phòng ban</option>
+          <option value="">Viện NCCN</option>
+          <option value="">Phòng QTKD</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">5. Field input icon</label>
+      <div class="m-row">
+        <input
+          type="text"
+          placeholder="Tìm kiếm theo tên, số hồ sơ"
+          class="m-input m-input-icon"
+        />
+      </div>
+
+      <div
+        class="m-row"
+        style="position: relative; display: inline-block; margin-top: 50px"
+      >
+        <input
+          type="text"
+          placeholder="Tìm kiếm theo tên, số hồ sơ"
+          class="m-input m-input-icon m-input-error"
+        />
+        <div class="m-error-info">
+          <div class="m-error-text">
+            Mật khẩu không được trùng với tài khoản
+          </div>
+          <div class="m-error-arrow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">6. Field input label</label>
+      <div class="m-row">
+        <input
+          type="text"
+          placeholder="Tìm kiếm theo tên, số hồ sơ"
+          class="m-input"
+        />
+      </div>
+
+      <div
+        class="m-row"
+        style="position: relative; display: inline-block; margin-top: 50px"
+      >
+        <input
+          type="text"
+          placeholder="Tìm kiếm theo tên, số hồ sơ"
+          class="m-input m-input-label m-input-error"
+        />
+        <div class="m-error-info">
+          <div class="m-error-text">Mật khẩu không đúng định dạng</div>
+          <div class="m-error-arrow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">7. Dropdown</label>
+      <div class="m-row m-combo-box" style="display: flex; align-items: center">
+        <input type="text" class="m-input" placeholder="Chọn/Nhập thông tin" />
+        <button class="m-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-chevron-right m-btn-arrow"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <ul class="m-dropdown-menu">
+          <li class="m-dropdown-item">Trạng thái 1</li>
+          <li class="m-dropdown-item">Trạng thái 2</li>
+          <li class="m-dropdown-item active">
+            <i class="fas fa-check"></i>
+            Trạng thái 2
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">8. Checkbox</label>
+      <div class="m-row">
+        <label class="container">
+          <input type="checkbox" checked="checked" class="m-checkbox" />
+          <span class="checkmark" style="position: absolute"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="m-row" style="margin-top: 30px">
+      <label for="">9. Radio Button</label>
+      <div class="m-row">
+        <label class="container" style="display: flex">
+          <input type="radio" class="m-radio" />
+          <span class="radio-mark">Yes</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="m-menu-left">
+      <label for="">10. Menu Left</label>
+      <div
+        class="m-row"
+        style="display: flex; align-items: center; padding: 12px 16px"
+      >
+        <div class="m-toggle"></div>
+        <div class="m-logo"></div>
+      </div>
+      <div class="m-col">
+        <div class="m-row active">
+          <div
+            class="m-icon"
+            style="background-image: url(./assets/icon/document-online.png)"
+          ></div>
+          <div class="m-info">Hồ sơ điện tử</div>
+        </div>
+        <div class="m-row">
+          <div
+            class="m-icon"
+            style="background-image: url(./assets/icon/document-online.png)"
+          ></div>
+          <div class="m-info">Hồ sơ giấy</div>
+        </div>
+        <div class="m-row">
+          <div
+            class="m-icon"
+            style="background-image: url(./assets/icon/report.png)"
+          ></div>
+          <div class="m-info">Theo dõi địa chỉ</div>
+        </div>
+        <div class="m-row">
+          <div
+            class="m-icon"
+            style="background-image: url(./assets/icon/dashboard.png)"
+          ></div>
+          <div class="m-info">Theo dõi đóng</div>
+        </div>
+        <div class="m-row">
+          <div
+            class="m-icon"
+            style="background-image: url(./assets/icon/dic-employee.png)"
+          ></div>
+          <div class="m-info">Quản lý lao động</div>
+        </div>
+        <div class="m-row">
+          <div
+            class="m-icon"
+            style="background-image: url(./assets/icon/setting.png)"
+          ></div>
+          <div class="m-info">Thiết lập</div>
+        </div>
+        <div class="m-row">
+          <div class="m-icon"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-top-header">
+      <label for="">11. Top Header</label>
+      <div class="m-row">
+        <div class="left-inner">
+          <div
+            class="m-row"
+            style="display: flex; align-items: center; padding: 12px 16px"
+          >
+            <div class="m-toggle"></div>
+            <div class="m-logo"></div>
+          </div>
+          <div class="m-row">
+            <div class="m-branch">
+              <div class="m-branch-logo">MB</div>
+              <div class="m-branch-info">Chi Nhánh Misa miền Bắc</div>
+              <div class="m-branch-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-inner">
+          <div class="m-row">
+            <div class="m-notification">
+              <i class="far fa-bell"></i>
+            </div>
+            <div class="m-avatar"></div>
+            <div class="m-name">Mai Anh Bảo</div>
+            <div class="m-option"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">12. Table</label>
+      <div class="m-row">
+        <table class="m-table">
+          <thead>
+            <tr>
+              <th style="width: 50px" class="text-align-center">#</th>
+              <th style="width: 200px" class="text-align-left">Mã nhân viên</th>
+              <th class="text-align-left">Họ và tên</th>
+              <th style="width: 100px" class="text-align-left">Giới Tính</th>
+              <th style="width: 150px" class="text-align-left">Ngày sinh</th>
+              <th style="width: 200px" class="text-align-right">Mức Lương</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-align-center">
+                <div class="m-row">
+                  <label class="container">
+                    <input
+                      type="checkbox"
+                      checked="checked"
+                      class="m-checkbox"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </td>
+              <td class="text-align-left">MF1010</td>
+              <td class="text-align-left">Nguyễn Hương Giang</td>
+              <td class="text-align-left">Nữ</td>
+              <td class="text-align-left">12/12/1999</td>
+              <td class="text-align-right">10.000.000</td>
+            </tr>
+            <tr>
+              <td class="text-align-center">
+                <div class="m-row">
+                  <label class="container">
+                    <input
+                      type="checkbox"
+                      checked="checked"
+                      class="m-checkbox"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </td>
+              <td class="text-align-left">MF1010</td>
+              <td class="text-align-left">Nguyễn Hương Giang</td>
+              <td class="text-align-left">Nữ</td>
+              <td class="text-align-left">12/12/1999</td>
+              <td class="text-align-right">10.000.000</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="m-pagination">
+          <div class="left-inner">
+            <p>Hiển thị 0-20/123 lao động</p>
+          </div>
+          <div class="center-inner">
+            <div class="m-first-page">
+              <i class="fas fa-angle-double-left"></i>
+            </div>
+            <div class="m-prev-page"><i class="fas fa-angle-left"></i></div>
+            <div class="m-number-page">
+              <div class="active">1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+            </div>
+            <div class="m-next-page"><i class="fas fa-angle-right"></i></div>
+            <div class="m-last-page">
+              <i class="fas fa-angle-double-right"></i>
+            </div>
+          </div>
+          <div class="right-inner">
+            <p>20 lao động/trang</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">13. Toast Message</label>
+      <div class="m-toast-box">
+        <div class="m-toast-item m-toast-error">
+          <div class="m-toast-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="m-toast-info">Nội dung đi kèm tiêu đề</div>
+          <div class="m-toast-close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div class="m-toast-item m-toast-warning">
+          <div class="m-toast-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="m-toast-info">Nội dung đi kèm tiêu đề</div>
+          <div class="m-toast-close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div class="m-toast-item m-toast-success">
+          <div class="m-toast-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="m-toast-info">Nội dung đi kèm tiêu đề</div>
+          <div class="m-toast-close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div class="m-toast-item m-toast-info">
+          <div class="m-toast-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <div class="m-toast-info">Nội dung đi kèm tiêu đề</div>
+          <div class="m-toast-close"><i class="fas fa-times"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">14. Pop up</label>
+      <div class="m-popup m-popup-warning-1">
+        <div class="m-popup-close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="m-popup-title">Đóng Form thông tin chung</div>
+        <div class="m-popup-body">
+          <div class="m-popup-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <p class="m-popup-info">
+            Bạn có chắc muốn đóng form nhập
+            <strong>"Thông tin chung của thủ tục 603"</strong> hay không
+          </p>
+        </div>
+        <div class="m-popup-footer">
+          <div class="m-row">
+            <button class="m-btn m-btn-2">Tiếp tục nhập</button>
+          </div>
+          <div class="m-row">
+            <button class="m-btn">Đóng</button>
+          </div>
+        </div>
+      </div>
+      <div class="m-popup m-popup-warning-2">
+        <div class="m-popup-close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="m-popup-title">Đóng Form thông tin chung</div>
+        <div class="m-popup-body">
+          <div class="m-popup-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <p class="m-popup-info">
+            Bạn có chắc muốn đóng form nhập
+            <strong>"Thông tin chung của thủ tục 603"</strong> hay không
+          </p>
+        </div>
+        <div class="m-popup-footer">
+          <div class="m-row">
+            <button class="m-btn m-btn-2">Tiếp tục nhập</button>
+          </div>
+          <div class="m-row">
+            <button class="m-btn m-btn-1">Đóng</button>
+          </div>
+        </div>
+      </div>
+      <div class="m-popup m-popup-notification">
+        <div class="m-popup-close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="m-popup-title">Pop-up thông báo</div>
+        <div class="m-popup-body">
+          <p class="m-popup-info">
+            Hiện bạn chưa thiết lập USB Token. Vui lòng thiết lập và kết nối với
+            USB Token để ký nộp các hồ sơ
+          </p>
+        </div>
+        <div class="m-popup-footer">
+          <div class="m-row">
+            <button class="m-btn m-btn-2">Tiếp tục nhập</button>
+          </div>
+          <div class="m-row">
+            <button class="m-btn m-btn-1">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-row">
+      <label for="">15. Pop-Up full</label>
+    </div>
+    <div class="m-popup-full">
+      <div class="header">
+        <div class="title">THÊM MỚI LAO ĐỘNG</div>
+        <ul class="option-list">
+          <li class="option-item">
+            <a href="#" class="option-item-link">1. Thông tin cá nhân</a>
+          </li>
+          <li class="option-item">
+            <a href="#" class="option-item-link">2. Thông tin tham gia BHXH</a>
+          </li>
+          <li class="option-item">
+            <a href="#" class="option-item-link">3. Dữ liệu gia đình</a>
+          </li>
+          <li class="option-item">
+            <a href="#" class="option-item-link">4. Hồ sơ đính kèm</a>
+          </li>
+        </ul>
+      </div>
+      <div class="body">
+        <div class="left-inner">
+          <div class="title">A.THÔNG TIN CHUNG</div>
+          <div class="m-row">
+            <label for="">Mã số BHXH*</label>
+            <div class="m-row">
+              <input
+                type="text"
+                placeholder="Tìm kiếm theo tên, số hồ sơ"
+                class="m-input m-input-label"
+              />
+            </div>
+          </div>
+          <div class="m-row">
+            <label for="">Chọn phương thức kahi báo*</label>
+            <div
+              class="m-row m-combo-box"
+              style="display: flex; align-items: center"
+            >
+              <input
+                type="text"
+                class="m-input"
+                placeholder="Chọn/Nhập thông tin"
+              />
+              <button class="m-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-right m-btn-arrow"
+                >
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+              <ul class="m-dropdown-menu">
+                <li class="m-dropdown-item">Trạng thái 1</li>
+                <li class="m-dropdown-item">Trạng thái 2</li>
+                <li class="m-dropdown-item active">
+                  <i class="fas fa-check"></i>
+                  Trạng thái 2
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="employee-modal">
+      <div class="overlay"></div>
+      <div class="employee-form">
+        <div class="form-header">THÔNG TIN NHÂN VIÊN</div>
+        <div class="form-content">
+          <div class="form-avatar"></div>
+          <div class="form-info">
+            <div class="info-container">
+              <div class="title">A. THÔNG TIN CHUNG:</div>
+              <div class="list-info">
+                <div class="item-info">
+                  <label for=""
+                    >Mã nhân viên(
+                    <span style="color: red">*</span>
+                    )
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Nhập mã nhân viên"
+                    class="m-input"
+                  />
+                </div>
+                <div class="item-info">
+                  <label for=""
+                    >Họ và tên(
+                    <span style="color: red">*</span>
+                    )
+                  </label>
+                  <input
+                    type="text"
+                    class="m-input"
+                    placeholder="Nhập họ và tên"
+                  />
+                </div>
+                <div class="item-info">
+                  <label for="">Ngày sinh</label>
+                  <input type="date" class="m-input" />
+                </div>
+                <div class="item-info">
+                  <label for="">Giới tính</label>
+                  <div class="combo-box">
+                    <select name="" id="">
+                      <option value="">Nam</option>
+                      <option value="">Nữ</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <label for=""
+                    >Số CMTND/Căn cước(
+                    <span style="color: red">*</span>
+                    )
+                  </label>
+                  <input
+                    type="text"
+                    class="m-input"
+                    placeholder="Nhập Số CMTND/Căn cước"
+                  />
+                </div>
+                <div class="item-info">
+                  <label for="">Ngày cấp</label>
+                  <input type="date" class="m-input" />
+                </div>
+                <div class="item-info">
+                  <label for="">Nơi cấp </label>
+                  <input
+                    type="text"
+                    placeholder="Nhập nơi cấp"
+                    class="m-input"
+                  />
+                </div>
+                <div class="item-info">
+                  <label for=""
+                    >Email(
+                    <span style="color: red">*</span>
+                    )
+                  </label>
+                  <input type="text" placeholder="Nhập Email" class="m-input" />
+                </div>
+                <div class="item-info">
+                  <label for=""
+                    >Số điện thoại(
+                    <span style="color: red">*</span>
+                    )
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Nhập số điện thoại"
+                    class="m-input"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="info-container">
+              <div class="title">A. THÔNG TIN CHUNG:</div>
+              <div class="list-info">
+                <div class="item-info">
+                  <label for="">Vị trí</label>
+                  <div class="combo-box">
+                    <select name="" id="">
+                      <option value="Giám đốc">Giám đốc</option>
+                      <option value="Trưởng Phòng">Trưởng Phòng</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <label for="">Phòng ban</label>
+                  <div class="combo-box">
+                    <select name="" id="">
+                      <option value="Phòng nhân sự">Phòng nhân sự</option>
+                      <option value="Phòng QTKD">Phòng QTKD</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="item-info">
+                  <label for="">Mã số thuế cá nhân</label>
+                  <input
+                    type="text"
+                    placeholder="Nhập mã số thuế cá nhân"
+                    class="m-input"
+                  />
+                </div>
+                <div class="item-info">
+                  <label for=""
+                    >Lương cơ bản
+                  </label>
+                  <input
+                    type="number"
+                    class="m-input salary-input"
+                    placeholder="Nhập lương cơ bản"
+                  />
+                </div>
+                <div class="item-info">
+                  <label for="">Ngày gia nhập công ty</label>
+                  <input type="date" class="m-input" />
+                </div>
+                <div class="item-info">
+                  <label for="">Tình trạng công việc</label>
+                  <div class="combo-box">
+                    <select name="" id="">
+                      <option value="Đang làm việc">Đang làm việc</option>
+                      <option value="Đã nghỉ việc">Đã nghỉ việc</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            </div>
+          </div>
+          <div class="form-footer">
+            <button class="m-btn m-btn-2">Hủy</button>
+            <button class="m-btn m-btn-icon">Lưu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form action="/action_page.php">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  <input type="submit">
+</form>
+
+    <div style="height: 200px"></div>
+  </body>
+</html>

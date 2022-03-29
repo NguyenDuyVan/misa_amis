@@ -1,0 +1,36 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-25-percent {
+  width: 25% !important;
+}
+
+.w-40-percent {
+  width: 40% !important;
+}
+
+.w-60-percent {
+  width: 60% !important;
+}
+
+.p-r-6 {
+  padding-right: 6px;
+}
+
+.m-r-6 {
+  margin-right: 6px;
+}
+
+.p-r-20 {
+  padding-right: 20px;
+}
+
+.p-b-12 {
+  padding-bottom: 12px;
+}
+
+.zIndex9 {
+  z-index: 9;
+}

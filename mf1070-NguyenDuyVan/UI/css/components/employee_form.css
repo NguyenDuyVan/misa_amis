@@ -1,0 +1,137 @@
+.employee-modal {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  overflow: auto;
+  display: none;
+}
+
+.employee-modal.open-form {
+  display: block;
+}
+
+.employee-modal .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.employee-form {
+  width: 700px;
+  background-color: #fff;
+  position: relative;
+  z-index: 11;
+  margin: auto;
+  padding: 24px 8px 0 24px;
+  border-radius: 4px;
+  top: 4px;
+  overflow: hidden;
+}
+
+.employee-form .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.employee-form .close-btn:hover {
+  background-color: #e5e5e5;
+}
+
+.employee-form .form-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.employee-form .form-content {
+  margin-top: 12px;
+  display: flex;
+}
+
+.employee-form .form-content .form-avatar {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-image: url("../../assets/img/default-avatar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid #bbb;
+  margin-right: 16px;
+}
+
+.employee-form .form-content .form-info .info-container {
+  padding-top: 12px;
+}
+
+.employee-form .form-content .form-info .info-container .title {
+  font-weight: bold;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.employee-form .form-content .form-info .info-container .title::before {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 75px;
+  height: 3px;
+  background-color: #019160;
+}
+
+.employee-form .form-content .info-container .list-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.employee-form .form-content .info-container .list-info .item-info {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 16px);
+  margin-right: 16px;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.employee-form .form-content .info-container .list-info .item-info label {
+  margin-bottom: 4px;
+}
+
+.employee-form .form-content .info-container .list-info .item-info select {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.employee-form .form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: #f4f4f4;
+  height: 60px;
+  margin-left: -24px;
+  margin-right: -8px;
+  padding: 0 24px 0 0;
+  box-sizing: border-box;
+}
+
+.employee-form .form-footer .m-btn-2 {
+  margin-left: 16px;
+  background-color: transparent;
+  transition: 0.2s;
+  border: none;
+}
+
+.employee-form .form-footer .m-btn-2:hover {
+  background-color: #e5e5e5;
+}
+
+.employee-form .form-footer .m-btn {
+  margin-left: 16px;
+}

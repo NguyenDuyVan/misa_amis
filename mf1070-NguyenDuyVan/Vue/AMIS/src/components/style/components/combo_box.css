@@ -1,0 +1,107 @@
+/* The container must be positioned relative: */
+.m-combo-box {
+  position: relative;
+  width: 200px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+.m-combo-box.error .select-selected {
+  border: 1px solid #ff4747;
+}
+
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+.select-selected.error {
+  border: 1px solid red;
+}
+
+.m-combo-box:focus-visible,
+.select-selected:focus-visible,
+.select-selected.active {
+  outline: none;
+  border: 1px solid #2ca01c !important;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected-arrow:after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  background-position: -560px -359px;
+  background-image: url("../../../assets/img/Sprites.64af8f61.svg");
+}
+
+.select-selected-arrow {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+}
+
+.select-selected-arrow:hover {
+  background-color: #ccc;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.option,
+.select-selected {
+  color: #111;
+  padding: 0 10px;
+  line-height: 30px;
+  box-sizing: border-box;
+  height: 32px;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+/* Style items (options): */
+.option-container {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  padding: 2px 0;
+  animation: openDropdown 0.2s;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.option:hover, .option:focus, option.hover  {
+  background-color: #ebedf0;
+  color: #2ca01c;
+  outline: 0;
+}
+
+.option.active {
+  background-color: #2ca01c !important;
+  color: #fff !important;
+}

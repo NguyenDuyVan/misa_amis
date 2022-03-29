@@ -1,0 +1,30 @@
+.m-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.m-table tr {
+  border-bottom: 1px solid #bbb;
+  height: 40px;
+}
+
+.m-table tbody tr:hover {
+  background-color: rgb(218, 218, 218);
+}
+
+.m-table tr th,td {
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.m-table .text-align-left {
+  text-align: left;
+}
+
+.m-table .text-align-right {
+  text-align: right;
+}
+
+.m-table .text-align-center {
+  text-align: center;
+}

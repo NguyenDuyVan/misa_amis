@@ -1,0 +1,43 @@
+.m-row .m-btn:hover ~ .m-dropdown-menu {
+  clip-path: inset(0);
+}
+
+.m-row .m-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 190px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  z-index: 10;
+  clip-path: inset(0 0 100% 0);
+  transition: .2s;
+}
+
+.m-row .m-dropdown-menu .m-dropdown-item {
+  padding-left: 36px;
+  font-size: 13px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.m-row .m-dropdown-menu .m-dropdown-item:hover {
+  background-color: #E9EBEE;
+}
+
+.m-row .m-dropdown-menu .m-dropdown-item.active {
+  background-color: #019160;
+  color: #fff;
+  position: relative;
+}
+
+.m-row .m-dropdown-menu .m-dropdown-item.active i {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translate(-50%, -50%);
+}

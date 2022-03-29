@@ -1,0 +1,32 @@
+input[type="date"] {
+  display: block;
+  position: relative;
+  font-size: 13px;
+  font-family: notosans-regular;
+  font-style: italic;
+  color: #ccc;
+  cursor: pointer;
+}
+
+input[type="date"].active {
+  color: #000;
+  font-style: normal;
+}
+
+::-webkit-clear-button,
+::-webkit-inner-spin-button {
+  display: none;
+}
+::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  top: 2px;
+  right: -15px;
+  bottom: 0;
+  cursor: pointer;
+  background: white url("../../../assets/img/Sprites.64af8f61.svg") center
+    no-repeat ;
+  background-position: -128px -307px;
+  transform: scale(1.05);
+}

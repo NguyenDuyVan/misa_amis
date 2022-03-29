@@ -1,0 +1,73 @@
+.m-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  right: 30px;
+  position: fixed;
+  left: 194px;
+  bottom: 15px;
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 25px;
+  box-sizing: border-box;
+}
+
+.m-pagination .right-inner {
+  height: 32px;
+  background-color: #ffffff;
+  padding: 12px 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.m-pagination .right-inner .m-combo-box .option-container {
+  bottom: calc(100% + 5px);
+  animation: PagigationDropdownEffect 0.2s;
+}
+
+@keyframes PagigationDropdownEffect {
+  from {
+    opacity: 0.2;
+    bottom: calc(100% - 5px);
+  }
+  to {
+    opacity: 1;
+    bottom: calc(100% + 5px);
+  }
+}
+
+.m-pagination .right-inner .m-page-previous,
+.m-page-next {
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0 10px;
+}
+
+.m-pagination .right-inner .m-page-previous.blur,
+.m-page-next.blur {
+  color: #9e9e9e !important;
+  cursor: default;
+}
+
+.m-pagination .right-inner .m-page-previous:hover,
+.m-page-next:hover {
+  color: #2ca01c;
+}
+
+.m-pagination .right-inner .m-page-number span {
+  padding: 0 6px;
+  margin: 4px;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.m-pagination .right-inner .m-page-number span:hover {
+  color: #2ca01c;
+}
+
+.m-pagination .right-inner .m-page-number span.active {
+  border: 1px solid #e0e0e0;
+  font-weight: bold;
+}

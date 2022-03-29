@@ -1,0 +1,66 @@
+/* @import url("./components/message.css"); */
+/* @import url("./components/combo_box.css"); */
+/* @import url("./components/radio.css"); */
+/* @import url("./components/input.css");
+@import url("./components/button.css"); */
+/* @import url("./components/top_header.css"); */
+/* @import url("./components/checkbox.css"); */
+/* @import url("./components/table.css");  */
+/* @import url("./components/pagination.css"); */
+
+@import url("./components/custom.css");
+
+body {
+  font-family: notosans-regular;
+  font-size: 13px;
+  margin: 0;
+  user-select: none;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: notosans-regular;
+  src: url("../../assets/fonts/notosans-regular.2cb88a13.woff2");
+}
+
+@font-face {
+  font-family: notosans-italic;
+  src: url("../../assets/fonts/notosans-italic.1c1aaac9.woff2");
+}
+
+@font-face {
+  font-family: notosans-bold;
+  src: url("../../assets/fonts/notosans-bold.3ede5aff.woff2");
+}
+
+@font-face {
+  font-family: notosans-semibold;
+  src: url("../../assets/fonts/notosans-semibold.df3e6dc4.woff2");
+}
+
+.m-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.m-overlay {
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.m-icon {
+  background-image: url("../../assets/img/Sprites.64af8f61.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

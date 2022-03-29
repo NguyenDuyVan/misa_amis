@@ -1,0 +1,53 @@
+.navbar {
+  width: 226px;
+  height: calc(100vh - 48px);
+  border-right: 1px solid #bbb;
+  flex-shrink: 0;
+}
+
+.navbar .menu-item {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.navbar .menu-item:hover {
+  background-color: #e5e5e5;
+}
+
+.navbar .menu-item.active {
+  background-color: #019160;
+}
+
+.navbar .menu-item .menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar .menu-item .menu-icon-dashboard {
+  background-image: url("../../assets/icon/dashboard.png");
+}
+
+.navbar .menu-item .menu-icon-report {
+  background-image: url("../../assets/icon/report.png");
+}
+
+.navbar .menu-item .menu-icon-buy {
+  background-image: url("../../assets/icon/document-online.png");
+}
+
+.navbar .menu-item .menu-icon-employee {
+  background-image: url("../../assets/icon/dic-employee.png");
+}
+
+.navbar .menu-item .menu-icon-setting {
+  background-image: url("../../assets/icon/setting.png");
+}

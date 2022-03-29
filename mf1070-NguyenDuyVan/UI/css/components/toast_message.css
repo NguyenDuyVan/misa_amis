@@ -1,0 +1,52 @@
+.m-toast-box {
+  width: 250px;
+  /* position: fixed; */
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.m-toast-box .m-toast-item {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  background-color: #fff;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+
+.m-toast-box .m-toast-item .m-toast-info {
+  margin-left: 8px;
+  margin-right: auto;
+}
+
+.m-toast-box .m-toast-item .m-toast-close {
+  cursor: pointer;
+}
+
+.m-toast-box .m-toast-item i {
+  font-size: 20px;
+}
+
+/* error */
+.m-toast-box .m-toast-item.m-toast-error i {
+  color: #EB5757;
+}
+
+/* warning */
+.m-toast-box .m-toast-item.m-toast-warning i {
+  color: #F1BF4E;
+}
+
+/* success */
+.m-toast-box .m-toast-item.m-toast-success i {
+  color: #05B176;
+}
+
+/* info */
+.m-toast-box .m-toast-item.m-toast-info i {
+  color: #4589D9;
+}
